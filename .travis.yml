@@ -4,12 +4,10 @@ python:
    - "3.4"
    - "3.5"
    - "3.6"
-service:
-   - docker
 script:
-   - docker build -t kirtigupta123/py-Img .
-   - docker images
+   - python PythonProgram.py
+services:
+   - docker
 before_install:
-  - docker build -t kirtigupta123/img2 .
+  - docker build -t kirtigupta123/py-Img .
   - docker images
- 
