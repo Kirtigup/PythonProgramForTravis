@@ -9,4 +9,7 @@ service:
 script:
    - docker build -t kirtigupta123/py-Img .
    - docker images
+before_install:
+  - docker build -t kirtigupta123/img2 .
+  - docker images
  
