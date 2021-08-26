@@ -4,6 +4,8 @@ python:
    - "3.4"
    - "3.5"
    - "3.6"
+service:
+   - docker
 script:
    - docker build -t kirtigupta123/py-Img .
    - docker images
