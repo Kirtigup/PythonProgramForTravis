@@ -1,12 +1,8 @@
 language: python
-
 python:
    - "3.6"
-
 script:
-
-   - python PythonProgram.py
-
+ - python PythonProgram.py
 services:
    - docker
 before_install:
