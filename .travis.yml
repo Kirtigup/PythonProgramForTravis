@@ -1,11 +1,24 @@
 language: python
+
 python:
-   - "3.6"
-script:
-   - python PythonProgram.py
+
+  - "3.6"
+
+script: 
+
+  - python PythonProgram.py
+notifications:
+  email: Priyalguptaniec123@gmail.com
 services:
-   - docker
+  - docker
 before_install:
-  - docker build -t kirtigupta123/py-Img .
+  - docker build -t kirtigupta123/img2 .
   - docker images
+  - echo "$DockerPass" | docker login -u "$DockerID" --password-stdin
+  - docker run -it --name mycontainer1 kirtigupta123/img2 
+  - docker push kirtigupta123/img2
+  - docker pull kirtigupta123/img2
+  - docker run -it --name mycontainer2 kirtigupta123/img2 
+
+
 
