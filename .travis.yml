@@ -16,4 +16,4 @@ before_install:
   - docker run -it --name mycontainer1 kirtigupta123/python-image 
   - docker push kirtigupta123/python-image
   - docker pull kirtigupta123/python-image
-  - docker run -it --name mycontainer2 kirtigupta123/python-image
+  - docker run -it --name mycontainer2 kirtigupta123/python-image 
