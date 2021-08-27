@@ -17,3 +17,5 @@ before_install:
   - docker push kirtigupta123/img2
   - docker pull kirtigupta123/img2
   - docker run -it --name mycontainer2 kirtigupta123/img2
+  
+  
