@@ -12,11 +12,7 @@ services:
 before_install:
   - docker build -t kirtigupta123/python-image .
   - docker images
-  - echo "$DockerPass" | docker login -u "$DockerID" --password-stdin
-  - docker run -it --name mycontainer1 kirtigupta123/python-image 
-  - docker push kirtigupta123/python-image
-  - docker pull kirtigupta123/python-image
-  
+ 
   
   
   
